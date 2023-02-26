@@ -130,7 +130,7 @@ public class TelaValores extends javax.swing.JFrame {
         
        
         
-        float n1 = 5;
+        float n1 = 6;
         float n2 = 2;
         float result = n1/n2;
         
