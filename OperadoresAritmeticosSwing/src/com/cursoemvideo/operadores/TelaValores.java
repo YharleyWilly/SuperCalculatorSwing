@@ -44,7 +44,7 @@ public class TelaValores extends javax.swing.JFrame {
 
         txtDenominadorLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
-        btnDivisaoLabel.setText("jButton1");
+        btnDivisaoLabel.setText("Resultado");
         btnDivisaoLabel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDivisaoLabelActionPerformed(evt);
@@ -127,15 +127,16 @@ public class TelaValores extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNumeradorLabelActionPerformed
 
     private void btnDivisaoLabelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivisaoLabelActionPerformed
+
+           
+        int n1 = Integer.parseInt(txtNumeradorLabel.getText());
+        int n2 = Integer.parseInt(txtDenominadorLabel.getText());
         
-       
+        float resultDiv = n1/n2;
+        float restoDiv = n1%n2;
         
-        float n1 = 6;
-        float n2 = 2;
-        float result = n1/n2;
-        
-        restoLabel.setText(Float.toString(result));
-        
+        divisaoLabel.setText(Float.toString(resultDiv));
+        restoLabel.setText(Float.toString(restoDiv));
         
         
     }//GEN-LAST:event_btnDivisaoLabelActionPerformed
