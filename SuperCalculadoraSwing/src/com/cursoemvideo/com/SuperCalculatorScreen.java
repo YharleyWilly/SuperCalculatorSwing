@@ -173,8 +173,9 @@ public class SuperCalculatorScreen extends javax.swing.JFrame {
 
     private void botaoCalcLabelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCalcLabelActionPerformed
         
-        int num = Integer.parseInt(numLabel.getValue().toString());
+        int num = Integer.parseInt(numLabel.getValue().toString()); //Input of number
         
+        //Data processing with output
         divPor2Label.setText(Integer.toString(num%2));
         elevadoCuboLabel.setText(Double.toString(Math.pow(num,3)));
         sqrt2Label.setText(String.format("%.2f", Math.sqrt(num)));
